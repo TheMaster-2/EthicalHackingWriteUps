@@ -193,6 +193,8 @@ So the above means we can run zip as root
 So goto GTFOBINS
 https://gtfobins.github.io/
 
+search for ZIP, and get the sudo one
+
 type commands one line at a time
 ```markdown
 TF=$(mktemp -u)
