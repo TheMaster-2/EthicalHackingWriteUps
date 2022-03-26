@@ -161,7 +161,7 @@ https://www.exploit-db.com/exploits/48411
 
 ![image](https://user-images.githubusercontent.com/66864342/160244458-e91cdcf8-2f4c-4af6-a7f5-ccf99d837cba.png)
 
-Run the exploit
+Run the exploit after registering and account
 
 ![image](https://user-images.githubusercontent.com/66864342/160244777-797f3760-e6d2-49ec-8f19-708e976adc1a.png)
 
@@ -176,6 +176,25 @@ jeanpaul:x:1000:1000:jeanpaul,,,:/home/jeanpaul:/bin/bash
 
 
 ![image](https://user-images.githubusercontent.com/66864342/160244492-f39e6c95-d357-4250-a950-21da05052723.png)
+
+Ok so now lets try logging in as jeanpaul with a password (this didnt work, so used SSH -i id_rsa - I also had to change permission on file to 400
+
+```markdown
+ssh -i id_rsa jeanpaul@192.168.22.136
+```
+
+```markdown
+sudo -l
+```
+   (root) NOPASSWD: /usr/bin/zip
+   
+So the above means we can run zip as root
+
+So goto GTFOBINS
+https://gtfobins.github.io/![image](https://user-images.githubusercontent.com/66864342/160245438-4d4bc4ea-58f1-44ba-83e5-481b24066caf.png)
+
+
+
 
 
 
