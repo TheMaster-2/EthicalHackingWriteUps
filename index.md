@@ -63,7 +63,7 @@ sudo nmap -A -p- -T4 192.168.22.136
 ![image](https://user-images.githubusercontent.com/66864342/160243024-f237bfba-81e5-4266-8bd8-12e3805577fa.png)
 ![image](https://user-images.githubusercontent.com/66864342/160243035-fb8b2c2a-664a-43e4-8244-7aba436d9488.png)
 
-Interesting ports and 
+Interesting ports and info
 - 22/tcp    open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
 - 80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
 - |_http-server-header: Apache/2.4.38 (Debian)
@@ -82,13 +82,17 @@ Interesting ports and
 - Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel!
 
 Browse to port http://192.168.22.136:80
-
+Default webpage bolt installation error?
 ![image](https://user-images.githubusercontent.com/66864342/160243232-38f450e6-66ee-4140-946f-4cf00e9c9f08.png)
 
 Browse to http://192.168.22.136:8080
-Discovered PHP settings![image](https://user-images.githubusercontent.com/66864342/160243286-d2733a50-9595-41b7-bccc-0e666ac18e7b.png)
+Discovered PHP settings
 
+![image](https://user-images.githubusercontent.com/66864342/160243472-26a386e7-8ee1-4766-9c42-a8b12c983547.png)
 
-
-
+Ran FFUF to parse web folders in two tabs
+```markdown
+ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http://192.168.22.136/FUZZ
+ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http://192.168.22.136:8080/FUZZ
+```
 
