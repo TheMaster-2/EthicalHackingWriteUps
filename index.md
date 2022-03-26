@@ -108,11 +108,19 @@ mkdir nfs
 sudo mount -t nfs 192.168.22.136:/srv/nfs /mnt/nfs -o nolock
 ```
 
+in nfs floder we find a file called save.zip
+![image](https://user-images.githubusercontent.com/66864342/160244210-cb28624a-b755-4284-8f4d-2ebd4efa4ec8.png)
 
 
-Discovered web folders
+
+Discovered the following web folders
 
 ![image](https://user-images.githubusercontent.com/66864342/160243845-7911f7ae-a700-4cbd-991a-4e48fd81a3cb.png)
+
+opened config.yaml and we Find a usern & password
+![image](https://user-images.githubusercontent.com/66864342/160244148-5dcb3f37-b215-47f1-9b77-6e9fafc0847c.png)
+
+
 
 
 
