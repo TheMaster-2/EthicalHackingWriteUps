@@ -124,7 +124,8 @@ Fcrack -v -u -D -p /usr/share/wordlists/rockyou.txt
 ```
 
 -v=verbose -u=unzip -D=dictionary -p=file
-java101![image](https://user-images.githubusercontent.com/66864342/160244865-75cd6ccc-4ee1-4fcf-857e-1ed0cb340119.png)
+
+password is java101
 
 
 
