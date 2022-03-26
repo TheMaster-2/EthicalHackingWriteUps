@@ -118,7 +118,14 @@ In nfs folder we find a file called save.zip
 ![image](https://user-images.githubusercontent.com/66864342/160244210-cb28624a-b755-4284-8f4d-2ebd4efa4ec8.png)
 
 
-However the file is password protected, lets continue hunting!
+However the file is password protected. so lets try fcrack!
+```markdown
+Fcrack -v -u -D -p /usr/share/wordlists/rockyou.txt
+```
+
+-v=verbose -u=unzip -D=dictionary -p=file
+java101![image](https://user-images.githubusercontent.com/66864342/160244865-75cd6ccc-4ee1-4fcf-857e-1ed0cb340119.png)
+
 
 
 Discovered the following web folders
@@ -127,7 +134,7 @@ Discovered the following web folders
 ![image](https://user-images.githubusercontent.com/66864342/160243845-7911f7ae-a700-4cbd-991a-4e48fd81a3cb.png)
 
 
-opened config.yaml and we Find a usern & password
+Opened config.yaml and we Find a username & password
 
 
 ![image](https://user-images.githubusercontent.com/66864342/160244148-5dcb3f37-b215-47f1-9b77-6e9fafc0847c.png)
