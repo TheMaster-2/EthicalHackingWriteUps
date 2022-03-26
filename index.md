@@ -160,7 +160,7 @@ https://www.exploit-db.com/exploits/48411
 
 ![image](https://user-images.githubusercontent.com/66864342/160244458-e91cdcf8-2f4c-4af6-a7f5-ccf99d837cba.png)
 
-Run the exploit after registering and account
+Run the exploit after registering an account
 
 ![image](https://user-images.githubusercontent.com/66864342/160244777-797f3760-e6d2-49ec-8f19-708e976adc1a.png)
 
