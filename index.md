@@ -96,8 +96,21 @@ ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http:/
 ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http://192.168.22.136:8080/FUZZ
 ```
 
+So now I checked NFS
+```markdown
+Showmount -e 192.168.22.136 for nfs
+```
 
-Discovered web folderd
+mkdir in mnt i called it nfs
+```markdown
+cd mnt
+mkdir nfs
+sudo mount -t nfs 192.168.22.136:/srv/nfs /mnt/nfs -o nolock
+```
+
+
+
+Discovered web folders
 
 ![image](https://user-images.githubusercontent.com/66864342/160243845-7911f7ae-a700-4cbd-991a-4e48fd81a3cb.png)
 
