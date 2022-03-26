@@ -96,3 +96,11 @@ ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http:/
 ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http://192.168.22.136:8080/FUZZ
 ```
 
+
+Discovered web folderd
+
+![image](https://user-images.githubusercontent.com/66864342/160243845-7911f7ae-a700-4cbd-991a-4e48fd81a3cb.png)
+
+
+
+
