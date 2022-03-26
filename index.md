@@ -44,11 +44,11 @@ This Vulnerable by design VM is provided by TCM Acamdemy as part of their Practi
 Network cards to NAT for some reason this VM was dual honed however by we can ignore that for this VM. 
 
 Ok so once VM booted, I had to log in and run
-
+```markdown
 DHClient
 
 Then run Netdiscover to get target IP, for me.
-
+```markdown
 192.168.22.136
 
 
