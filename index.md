@@ -74,7 +74,6 @@ Interesting ports and info
 -	_http-server-header: Apache/2.4.38 (Debian)
 -	_Methods supported:CONNECTION
 -	_http-title: PHP 7.3.27-1~deb10u1 - phpinfo()
--
 - Running: Linux 4.X|5.X
 - OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
 - OS details: Linux 4.15 - 5.6
@@ -129,7 +128,7 @@ info
 
 password is java101
 
-We extract 2 file
+We extract 2 files
 
 ![image](https://user-images.githubusercontent.com/66864342/160245066-0cf3a05e-29cc-4093-b373-11ca7aaca0b5.png)
 
