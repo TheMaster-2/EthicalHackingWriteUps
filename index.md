@@ -138,7 +138,9 @@ http://192.168.22.136:8080/dev/index.php?p=action.search&action=../../../../../.
 
 The one of interest to us is the user 1000 permission futher down the list
 
-jeanpaul:x:1000:1000:jeanpaul,,,:/home/jeanpaul:/bin/bash![image](https://user-images.githubusercontent.com/66864342/160244492-f39e6c95-d357-4250-a950-21da05052723.png)
+jeanpaul:x:1000:1000:jeanpaul,,,:/home/jeanpaul:/bin/bash
+
+![image](https://user-images.githubusercontent.com/66864342/160244492-f39e6c95-d357-4250-a950-21da05052723.png)
 
 
 
