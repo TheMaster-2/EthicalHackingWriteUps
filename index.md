@@ -83,12 +83,16 @@ Interesting ports and info
 
 Browse to port http://192.168.22.136:80
 Default webpage bolt installation error?
+
 ![image](https://user-images.githubusercontent.com/66864342/160243232-38f450e6-66ee-4140-946f-4cf00e9c9f08.png)
+
 
 Browse to http://192.168.22.136:8080
 Discovered PHP settings
 
+
 ![image](https://user-images.githubusercontent.com/66864342/160243472-26a386e7-8ee1-4766-9c42-a8b12c983547.png)
+
 
 Ran FFUF to parse web folders in two tabs
 ```markdown
@@ -110,36 +114,46 @@ sudo mount -t nfs 192.168.22.136:/srv/nfs /mnt/nfs -o nolock
 
 In nfs folder we find a file called save.zip
 
+
 ![image](https://user-images.githubusercontent.com/66864342/160244210-cb28624a-b755-4284-8f4d-2ebd4efa4ec8.png)
+
 
 However the file is password protected, lets continue hunting!
 
+
 Discovered the following web folders
+
 
 ![image](https://user-images.githubusercontent.com/66864342/160243845-7911f7ae-a700-4cbd-991a-4e48fd81a3cb.png)
 
+
 opened config.yaml and we Find a usern & password
 
+
 ![image](https://user-images.githubusercontent.com/66864342/160244148-5dcb3f37-b215-47f1-9b77-6e9fafc0847c.png)
+
 
 
 Back to port 80 and see what bolt is...
 After Googling, it seems to be a CMS, I also find an exploit for a local file inclusion
 https://www.exploit-db.com/exploits/48411
 
+
 ![image](https://user-images.githubusercontent.com/66864342/160244458-e91cdcf8-2f4c-4af6-a7f5-ccf99d837cba.png)
 
 Run the exploit
 
-![image](https://user-images.githubusercontent.com/66864342/160244752-b1091cc2-07cb-4e7e-9b2a-037b4da36cdb.png)
+![image](https://user-images.githubusercontent.com/66864342/160244777-797f3760-e6d2-49ec-8f19-708e976adc1a.png)
 
 
 
 ![image](https://user-images.githubusercontent.com/66864342/160244472-ad6caaa5-1ec9-4a8f-8411-53bf70e56edf.png)
 
+
 The one of interest to us is the user 1000 permission futher down the list
 
 jeanpaul:x:1000:1000:jeanpaul,,,:/home/jeanpaul:/bin/bash
+
 
 ![image](https://user-images.githubusercontent.com/66864342/160244492-f39e6c95-d357-4250-a950-21da05052723.png)
 
