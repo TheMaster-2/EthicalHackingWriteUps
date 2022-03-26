@@ -46,11 +46,11 @@ Network cards to NAT for some reason this VM was dual honed however by we can ig
 Ok so once VM booted, I had to log in and run
 ```markdown
 DHClient
-
+```
 Then run Netdiscover to get target IP, for me.
 ```markdown
 192.168.22.136
-
+```
 
 
 
