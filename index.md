@@ -123,9 +123,20 @@ However the file is password protected. so lets try fcrack!
 Fcrack -v -u -D -p /usr/share/wordlists/rockyou.txt
 ```
 
+info
 -v=verbose -u=unzip -D=dictionary -p=file
 
+
 password is java101
+We extract 2 file
+
+![image](https://user-images.githubusercontent.com/66864342/160245066-0cf3a05e-29cc-4093-b373-11ca7aaca0b5.png)
+
+
+cat both files
+
+![image](https://user-images.githubusercontent.com/66864342/160245036-adf5e998-18cb-40ca-a990-ea3f22476fa8.png)
+
 
 
 
