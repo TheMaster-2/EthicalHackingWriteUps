@@ -66,14 +66,14 @@ sudo nmap -A -p- -T4 192.168.22.136
 Interesting ports and info
 - 22/tcp    open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
 - 80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
-- |_http-server-header: Apache/2.4.38 (Debian)
-- |_http-title: Bolt - Installation error
+- _http-server-header: Apache/2.4.38 (Debian)
+- _http-title: Bolt - Installation error
 - 111/tcp   open  rpcbind  2-4 (RPC #100000)
 - 2049/tcp  open  nfs_acl  3 (RPC #100227)
 - 8080/tcp  open  http     Apache httpd 2.4.38 ((Debian))
--	|_http-server-header: Apache/2.4.38 (Debian)
--	|_Methods supported:CONNECTION
--	|_http-title: PHP 7.3.27-1~deb10u1 - phpinfo()
+-	_http-server-header: Apache/2.4.38 (Debian)
+-	_Methods supported:CONNECTION
+-	_http-title: PHP 7.3.27-1~deb10u1 - phpinfo()
 -
 - Running: Linux 4.X|5.X
 - OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
