@@ -47,7 +47,7 @@ Nnce VM booted, I had to log in and run (creds are provided in a text file byt T
 ```markdown
 DHClient
 ```
-**Enumeration**
+
 
 Then run Netdiscover to get target IP, for me.
 ```markdown
@@ -112,7 +112,7 @@ In nfs folder we find a file called save.zip
 
 ![image](https://user-images.githubusercontent.com/66864342/160244210-cb28624a-b755-4284-8f4d-2ebd4efa4ec8.png)
 
-
+However the file is password protected, lets continue hunting!
 
 Discovered the following web folders
 
@@ -123,6 +123,21 @@ opened config.yaml and we Find a usern & password
 ![image](https://user-images.githubusercontent.com/66864342/160244148-5dcb3f37-b215-47f1-9b77-6e9fafc0847c.png)
 
 
+Back to port 80 and see what bolt is...
+After Googling, it seems to be a CMS, I also find an exploit for a local file inclusion
+https://www.exploit-db.com/exploits/48411
+
+![image](https://user-images.githubusercontent.com/66864342/160244458-e91cdcf8-2f4c-4af6-a7f5-ccf99d837cba.png)
+
+Run the exploit
+
+http://192.168.22.136:8080/dev/index.php?p=action.search&action=../../../../../../../etc/passwd
+
+
+![image](https://user-images.githubusercontent.com/66864342/160244472-ad6caaa5-1ec9-4a8f-8411-53bf70e56edf.png)
+
+The one of interest to us is the user 1000 permission
+jeanpaul:x:1000:1000:jeanpaul,,,:/home/jeanpaul:/bin/bash![image](https://user-images.githubusercontent.com/66864342/160244492-f39e6c95-d357-4250-a950-21da05052723.png)
 
 
 
