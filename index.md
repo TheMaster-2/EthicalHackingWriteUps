@@ -39,19 +39,27 @@ Dev by TCM Academy
 
 This is my first write up
 
-This Vulnerable by design VM is provided by TCM Acamdemy as part of their Practical Ethical Hacking - The Complete Course
+This Vulnerable by design VM is provided by TCM Acamdemy as part of the Practical Ethical Hacking - The Complete Course
 
-Network cards to NAT for some reason this VM was dual honed however by we can ignore that for this VM. 
+I had to change Network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant for this VM. 
 
-Ok so once VM booted, I had to log in and run
+Nnce VM booted, I had to log in and run (creds are provided ib a text file byt TCM)
 ```markdown
 DHClient
 ```
 Then run Netdiscover to get target IP, for me.
 ```markdown
+sudo netdiscover -r 192.168.22.0/24
+```
+We find our target VM
 192.168.22.136
+Next step is to run NMAP
+```markdown
+sudo nmap -A -p- -T4 192.168.22.136
 ```
 
+![image](https://user-images.githubusercontent.com/66864342/160243024-f237bfba-81e5-4266-8bd8-12e3805577fa.png)
+![image](https://user-images.githubusercontent.com/66864342/160243035-fb8b2c2a-664a-43e4-8244-7aba436d9488.png)
 
 
 
