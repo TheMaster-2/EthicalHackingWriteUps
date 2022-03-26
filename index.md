@@ -34,6 +34,30 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TheMaster-2/EthicalHackingWriteUps/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+Machine 1
+Dev by TCM Academy
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+This is my first write up
+
+This Vulnerable by design VM is provided by TCM Acamdemy as part of their Practical Ethical Hacking - The Complete Course
+
+Network cards to NAT for some reason this VM was dual honed however by we can ignore that for this VM. 
+
+Ok so once VM booted, I had to log in and run
+
+DHClient
+
+Then run Netdiscover to get target IP, for me.
+
+192.168.22.136
+
+
+
+
+
+
+
+
+
+
+
