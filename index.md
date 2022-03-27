@@ -8,7 +8,7 @@ Dev by TCM Academy
 
 This is my first write up
 
-This Vulnerable by design VM is provided by TCM Acamdemy as part of the Practical Ethical Hacking - The Complete Course
+This Vulnerable by design VM is provided by TCM Academy as part of the Practical Ethical Hacking - The Complete Course
 
 I had to change Network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant for this VM. 
 
