@@ -1,5 +1,5 @@
 ## Welcome to my Ethical Hacking blogs
-[Link](posts.html)
+[Link](posts.md)
 
 
 
