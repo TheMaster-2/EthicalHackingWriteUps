@@ -1,4 +1,4 @@
-## Welcome to my Ethical Hacking walk throughs
+## Welcome to my Ethical Hacking blogs
 [Link](posts.html)
 
 
