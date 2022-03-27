@@ -1,1 +1,1 @@
-# EthicalHackingWriteUps
+# My Ethical Hacking Blogs
