@@ -62,8 +62,8 @@ Discovered PHP settings
 
 Then I ran FFUF to parse web folders in two tabs
 ```markdown
-ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http://192.168.22.136/FUZZ
-ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ http://192.168.22.136:8080/FUZZ
+ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ -u http://192.168.22.136/FUZZ
+ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt:FUZZ -u http://192.168.22.136:8080/FUZZ
 ```
 
 So then I checked NFS
