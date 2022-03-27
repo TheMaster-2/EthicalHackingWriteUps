@@ -18,7 +18,7 @@ DHClient
 ```
 
 
-Then run Netdiscover to get target IP, for me.
+I then ran Netdiscover to get target IP, (for me).
 ```markdown
 sudo netdiscover -r 192.168.22.0/24
 ```
