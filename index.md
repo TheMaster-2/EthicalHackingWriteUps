@@ -10,7 +10,7 @@ This is my first write up
 
 This Vulnerable by design VM is provided by TCM Academy as part of the Practical Ethical Hacking - The Complete Course
 
-I had to change Network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant for this VM. 
+I had to change Network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant. 
 
 Nnce VM booted, I had to log in and run (creds are provided in a text file byt TCM)
 ```markdown
