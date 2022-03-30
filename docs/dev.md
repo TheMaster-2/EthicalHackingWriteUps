@@ -123,14 +123,14 @@ From the FFUF results, I discovered the following web folders
 ![image](https://user-images.githubusercontent.com/66864342/160243845-7911f7ae-a700-4cbd-991a-4e48fd81a3cb.png)
 
 
-Opened config.yaml and we Find a username & password
+Opened config.yaml and I found a username & password
 
 
 ![image](https://user-images.githubusercontent.com/66864342/160244148-5dcb3f37-b215-47f1-9b77-6e9fafc0847c.png)
 
 
 
-I went back to port 80 tp see what bolt is...
+I went back to port 80 to see what bolt is...
 
 After Googling, it seems to be a CMS, I also find an exploit for a local file inclusion
 
@@ -139,7 +139,7 @@ https://www.exploit-db.com/exploits/48411
 
 ![image](https://user-images.githubusercontent.com/66864342/160244458-e91cdcf8-2f4c-4af6-a7f5-ccf99d837cba.png)
 
-Run the exploit after registering an account
+Ran the exploit after registering an account
 
 ![image](https://user-images.githubusercontent.com/66864342/160244777-797f3760-e6d2-49ec-8f19-708e976adc1a.png)
 
@@ -168,11 +168,11 @@ sudo -l
    
 So the above means I can run zip as root
 
-So goto GTFOBINS
+So I go to GTFOBINS
 
 https://gtfobins.github.io/
 
-search for ZIP, and get the sudo one
+I searched for ZIP, and I got the sudo one
 
 I typed commands one line at a time
 
