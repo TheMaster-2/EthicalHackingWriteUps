@@ -117,7 +117,7 @@ Ok so then I cat both files
 the id_rsa is a certificate file
 
 
-I discovered the following web folders
+From the FFUF results, I discovered the following web folders
 
 
 ![image](https://user-images.githubusercontent.com/66864342/160243845-7911f7ae-a700-4cbd-991a-4e48fd81a3cb.png)
