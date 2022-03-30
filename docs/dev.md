@@ -1,23 +1,28 @@
 
 
 Ethical Hacking Blog - John Bayes
+
 VM Dev by TCM Academy
 
 
 This is my first write up
-This Vulnerable by design VM is provided by TCM Academy as part of the Practical Ethical Hacking - The Complete Course
-I had to change Network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant.
+
+This Vulnerable by design VM is provided by TCM Academy as part of the course, Practical Ethical Hacking - The Complete Course
+I had to change the network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant.
 
 
-When the VM booted, I had to log in and run DHclient (creds are provided in a text file by TCM)
+When the VM booted, I had to log in and run DHclient as no IP was being picked up by the VM (creds are provided in a text file by TCM)
+
 ```markdown
 DHClient
 ```
-Then run Netdiscover to get target IP, for me.
+
+Then I ran Netdiscover to get the victim IP, for me.
 ```markdown
 sudo netdiscover -r 192.168.22.0/24
 ```
-We find our target VM 192.168.22.136 Next step is to run NMAP
+
+From the attack VM find the victim VM 192.168.22.136 and I ran NMAP
 ```markdown
 sudo nmap -A -p- -T4 192.168.22.136
 ```
