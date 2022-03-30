@@ -7,8 +7,9 @@ VM Dev by TCM Academy
 
 This is my first write up
 
-This Vulnerable by design VM is provided by TCM Academy as part of the course, Practical Ethical Hacking - The Complete Course
-I had to change the network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant.
+This Vulnerable by design VM is provided by TCM Academy as part of the course Practical Ethical Hacking - The Complete Course.
+
+I had to change the VM network cards to NAT, also for some reason this VM was dual honed, however, this is not relevant.
 
 
 When the VM booted, I had to log in and run DHclient as no IP was being picked up by the VM (creds are provided in a text file by TCM)
