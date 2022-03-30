@@ -1,6 +1,7 @@
 ## Welcome to my Ethical Hacking blogs
 [Link](https://github.com/TheMaster-2/EthicalHackingWriteUps/blob/gh-pages/docs/Dev.md)
 
+PAGE NEW
 
 
 Machine 1
