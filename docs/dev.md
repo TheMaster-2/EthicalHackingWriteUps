@@ -21,8 +21,9 @@ Then I ran Netdiscover to get the victim IP, for me.
 ```markdown
 sudo netdiscover -r 192.168.22.0/24
 ```
+discoverd 192.168.22.136
 
-From the attack VM find the victim VM 192.168.22.136 and I ran NMAP
+From the attack VM, d the victim VM 192.168.22.136 and I ran NMAP
 ```markdown
 sudo nmap -A -p- -T4 192.168.22.136
 ```
