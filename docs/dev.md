@@ -25,7 +25,7 @@ sudo netdiscover -r 192.168.22.0/24
 ```
 Discovered 192.168.22.136
 
-From the attack VM, run NMAEP against the victim VM 192.168.22.136.
+From the attack VM, run NMAP against the victim VM 192.168.22.136.
 
 ```markdown
 sudo nmap -A -p- -T4 192.168.22.136
