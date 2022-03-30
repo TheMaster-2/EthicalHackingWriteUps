@@ -1,4 +1,4 @@
-
+[LINK](https://themaster-2.github.io/EthicalHackingWriteUps/)
 
 Ethical Hacking Blog - John Bayes
 
