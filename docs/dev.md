@@ -19,12 +19,14 @@ DHClient
 ```
 
 Then I ran Netdiscover to get the victim IP, for me.
+
 ```markdown
 sudo netdiscover -r 192.168.22.0/24
 ```
-discoverd 192.168.22.136
+Discovered 192.168.22.136
 
-From the attack VM, d the victim VM 192.168.22.136 and I ran NMAP
+From the attack VM, run NMAEP against the victim VM 192.168.22.136.
+
 ```markdown
 sudo nmap -A -p- -T4 192.168.22.136
 ```
@@ -58,7 +60,8 @@ Default webpage bolt installation error?
 
 
 I browsed to http://192.168.22.136:8080
-Discovered PHP settings
+
+Discovered PHP.ini webpage
 
 
 ![image](https://user-images.githubusercontent.com/66864342/160243472-26a386e7-8ee1-4766-9c42-a8b12c983547.png)
