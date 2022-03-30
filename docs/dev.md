@@ -5,7 +5,7 @@ Ethical Hacking Blog - John Bayes
 VM Dev by TCM Academy
 
 
-This is my first write up
+This is my first write up! :)
 
 This Vulnerable by design VM is provided by TCM Academy as part of the course Practical Ethical Hacking - The Complete Course.
 
