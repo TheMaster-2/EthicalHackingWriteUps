@@ -1,5 +1,5 @@
 ## Welcome to my Ethical Hacking blogs
-[Link](https://github.com/TheMaster-2/EthicalHackingWriteUps/Dev.html)
+[Link](https://github.com/TheMaster-2/EthicalHackingWriteUps/dev.html)
 
 
 
